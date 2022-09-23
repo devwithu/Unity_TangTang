@@ -487,6 +487,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241795795}
     m_Modifications:
+    - target: {fileID: 1811382082, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811382082, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811382082, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -279
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572123185044041009, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572123185044041009, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572123185044041009, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572123185044041009, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572123185044041009, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -279
+      objectReference: {fileID: 0}
     - target: {fileID: 5572123186176551006, guid: d3c51a00c3a90b74cbd1b755d98a6356, type: 3}
       propertyPath: m_Name
       value: Joystick Move
@@ -615,10 +647,10 @@ RectTransform:
   m_Father: {fileID: 1120634192}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -400}
-  m_SizeDelta: {x: 400, y: 150}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -75}
+  m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &243510296
 MonoBehaviour:
@@ -2295,10 +2327,10 @@ RectTransform:
   m_Father: {fileID: 1241795795}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1756, y: 250}
+  m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1120634193
 MonoBehaviour:
@@ -2599,7 +2631,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 2
-  m_ReferenceResolution: {x: 1440, y: 3120}
+  m_ReferenceResolution: {x: 360, y: 780}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -3735,10 +3767,10 @@ RectTransform:
   m_Father: {fileID: 1120634192}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140}
-  m_SizeDelta: {x: 800, y: 300}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -35}
+  m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674086031
 MonoBehaviour:
@@ -3762,11 +3794,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 187
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 100
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3827,10 +3859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneId: 2800754082
-  serverOnly: 0
-  m_AssetId: 
-  hasSpawned: 0
 --- !u!114 &1700505595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3864,7 +3892,7 @@ MonoBehaviour:
   buttonClearNick: {fileID: 1661809142}
   buttonClose: {fileID: 64480172}
   gOSetting: {fileID: 762683407}
-  player: {fileID: 0}
+  player: {fileID: 8204657841171998302}
 --- !u!1 &1712901024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5193,6 +5221,10 @@ PrefabInstance:
     - target: {fileID: 1507275925103027067, guid: e2d09f5d70c8e40bd9fbfe3b4a439c32, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021497317237759445, guid: e2d09f5d70c8e40bd9fbfe3b4a439c32, type: 3}
+      propertyPath: stageTime
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 7021497317237759445, guid: e2d09f5d70c8e40bd9fbfe3b4a439c32, type: 3}
       propertyPath: rigidbody2D
