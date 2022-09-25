@@ -27,6 +27,13 @@ public class EnemyManager : MonoBehaviour
         while (true)
         {
             Vector2 spawnPosition = new Vector2(Random.Range(39.0f, -39.0f), Random.Range(23.0f, -23.0f));
+            
+            float dist = Vector3.Distance(spawnPosition,  GameManager.instance.playerController.gameObject.transform.position);
+            
+            if(dist < 10f)
+                continue;
+            
+            
             GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity) as GameObject;
             enemy.transform.parent = parentGO.transform;
             enemy.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(8.0f, -8.0f), Random.Range(8.0f, -8.0f));

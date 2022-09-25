@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: progear
+  m_TagString: Untagged
+  m_Icon: {fileID: -1225226869, guid: 0000000000000000d000000000000000, type: 2}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c5c714baecd164cb96b7609764de8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tform: {fileID: 0}
+  fireTags:
+  - param: 0
+    prw:
+      previousRotation: {x: 0, y: 0, z: 0, w: 0}
+      prevRotationNull: 1
+    actions:
+    - waitTime: {x: 0, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 100, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 3
+    - waitTime: {x: 0, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 3
+      angle: {x: 180, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 1
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 1
+    - waitTime: {x: 0, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 3
+      angle: {x: 160, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 1
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 1
+    - waitTime: {x: 2, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 0
+    - waitTime: {x: 0, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 4
+  bulletTags:
+  - speed: {x: 13, y: 0, z: 0}
+    randomSpeed: 0
+    rankSpeed: 0
+    prefabIndex: 0
+    actions:
+    - waitTime: {x: 20, y: 120, z: 0}
+      randomWait: 1
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 0
+      waitForChange: 0
+    - waitTime: {x: 60, y: 120, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 1
+      angle: {x: 270, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 1
+      waitForChange: 0
+    - waitTime: {x: 40, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 2
+      waitForChange: 0
+    - waitTime: {x: 40, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 0, y: 0, z: 0}
+      randomSpeed: 0
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 0
+      waitForChange: 0
+    - waitTime: {x: 20, y: 0, z: 0}
+      randomWait: 0
+      rankWait: 0
+      direction: 0
+      angle: {x: 0, y: 0, z: 0}
+      randomAngle: 0
+      rankAngle: 0
+      overwriteBulletSpeed: 0
+      speed: {x: 10, y: 22, z: 0}
+      randomSpeed: 1
+      rankSpeed: 0
+      useSequenceSpeed: 0
+      bulletTagIndex: 0
+      useParam: 0
+      fireTagIndex: 0
+      repeatCount: {x: 0, y: 0}
+      rankRepeat: 0
+      passParam: 0
+      passPassedParam: 0
+      paramRange: {x: 0, y: 0}
+      type: 2
+      waitForChange: 0
+  sequenceSpeed: 0
+  started: 0
+  waitBeforeRepeating: 0.5
+  ftFoldout: 1
+  ftFoldouts: 01
+  btFoldout: 1
+  btFoldouts: 01
+  ftaFoldouts:
+  - main: 1
+    sub: 0101010101
+  btaFoldouts:
+  - main: 1
+    sub: 0101010101

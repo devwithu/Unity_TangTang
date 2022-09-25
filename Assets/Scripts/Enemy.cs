@@ -105,14 +105,18 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D (Collider2D collider)
     {
         //Debug.Log(collider.name);
-        if(collider.tag == this.enemyTag)
+        if(collider.CompareTag(this.enemyTag) && collider.name != "Bullet1(Clone)")
         {
-            this.TakeDamage(1, collider.gameObject.GetComponent<Bullet>().shooter);
+            if (tag.Equals("Boss"))
+            {
+                print(collider.name);
+            }
+            this.TakeDamage(1);
             Destroy(collider.gameObject,0.1f);
         }
     }
 
-    void TakeDamage (int amount, GameObject player)
+    void TakeDamage (int amount)
     {
 
             this.currentHealth -= amount;
@@ -121,7 +125,7 @@ public class Enemy : MonoBehaviour
             {
                 //player.GetComponent<PlayerController>().currentExp += 1;
                 //player.GetComponent<PlayerController>().PlaySoundGetExp();
-                RpcPlaySoundDamaged(player);
+                //RpcPlaySoundDamaged(player);
                 Destroy(this.gameObject, 0.1f);
             }
       

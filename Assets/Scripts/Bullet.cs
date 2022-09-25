@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+namespace Survival
 {
-    public GameObject shooter;
+
+    public class Bullet : MonoBehaviour
+    {
+        public GameObject shooter;
+    }
 }

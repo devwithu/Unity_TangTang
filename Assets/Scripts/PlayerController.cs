@@ -2,6 +2,7 @@
 using Cinemachine;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using Survival;
 
 public class PlayerController : MonoBehaviour {
 
@@ -34,6 +35,8 @@ public class PlayerController : MonoBehaviour {
     public bool destroyOnDeath;
     public Vector2 initialPosition;
 
+    public bool isInvincible;
+    
 	void Start ()
 	{
 		//virtualJoystick = GameObject.Find("VirtualJoystick").GetComponent<VirtualJoystick>();
@@ -88,11 +91,12 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		//Debug.Log(collider.name);
+		
 		
 		if(collider.tag == this.enemyTag)
 		{
-			this.TakeDamage(1);
+			if (!isInvincible)
+				this.TakeDamage(1);
 			Destroy(collider.gameObject);
 		}
 	}

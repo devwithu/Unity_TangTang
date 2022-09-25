@@ -117,6 +117,9 @@ public class UIManager : MonoSingleton<UIManager>
 
     IEnumerator UpdateText()
     {
+        yield return new WaitForSeconds(1f);
+        bool isShowBoss = false;
+        
         while (true)
         {
             string strTempExp = "";
@@ -124,7 +127,28 @@ public class UIManager : MonoSingleton<UIManager>
 
             strTempExp += player.currentExp;
             strTempSurvivalTime += player.SurvivalTime().ToString( @"mm\:ss") ;
+
+            if (strTempSurvivalTime.Equals("00:00:00"))
+            {
+                if (!isShowBoss)
+                {
+
+                    isShowBoss = true;
+                    Debug.Log("Sgsg");
+                    GameManager.instance.ShowBoss();
+                }
+
+            }
             
+            if (strTempSurvivalTime.Equals("00:00"))
+            {
+                if (!isShowBoss)
+                {
+                    isShowBoss = true;
+                    Debug.Log("Sgsg");
+                    GameManager.instance.ShowBoss();
+                }
+            }
             if (!strTempExp.Equals(strExp) )
             {
                 strExp = strTempExp;
