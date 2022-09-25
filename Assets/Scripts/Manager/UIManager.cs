@@ -14,6 +14,7 @@ public class UIManager : MonoSingleton<UIManager>
     
     public GameObject panelNick;
     public GameObject panelEnd;
+    public GameObject panelUpgrade;
     
     public InputField inputFieldNick;
     public Button buttonStart;

@@ -24,11 +24,12 @@ public class PlayerController : MonoBehaviour {
     public string playerNick;
     public int currentHealth;
     public int currentExp;
-
+    public int levelExp = 3;
+    
     public DateTime startTime;
     public DateTime endTime;
     [SerializeField]
-    private int stageTime = 51;
+    private int stageTime = 61;
     
 
     public string enemyTag;
@@ -169,6 +170,11 @@ public class PlayerController : MonoBehaviour {
 	public void GetExp(int exp)
 	{
 		currentExp += exp;
+
+		if (currentExp >= levelExp)
+		{
+			UIManager.instance.panelUpgrade.SetActive(true);
+		}
 	}
 
 }

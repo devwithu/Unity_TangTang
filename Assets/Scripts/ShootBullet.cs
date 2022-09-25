@@ -11,12 +11,18 @@ namespace Survival
 
         [SerializeField] private float bulletSpeed;
 
-        [SerializeField] private float shootInterval = 1.0f;
+        public float shootInterval = 1.0f;
 
         [SerializeField] private float overlapSphereRadius = 13f;
 
         public void ReapeatSpawnBullet()
         {
+            InvokeRepeating("Shoot", this.shootInterval, this.shootInterval);
+        }
+
+        public void RestartSpawnBuller()
+        {
+            CancelInvoke("Shoot");
             InvokeRepeating("Shoot", this.shootInterval, this.shootInterval);
         }
 
